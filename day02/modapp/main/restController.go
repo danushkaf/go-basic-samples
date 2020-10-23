@@ -7,7 +7,6 @@ import (
 
 	"github.com/danushkaf/go-basic-samples/day02/modapp/middleware"
 	persistentStore "github.com/danushkaf/go-basic-samples/day02/modapp/persistentstore"
-	dummyPersistentStore "github.com/danushkaf/go-basic-samples/day02/modapp/persistentstore/dummy"
 	dummyApplicationStore "github.com/danushkaf/go-basic-samples/day02/modapp/persistentstore/dummy/application"
 	application "github.com/danushkaf/go-basic-samples/day02/modapp/services/application"
 	applicationIRepo "github.com/danushkaf/go-basic-samples/day02/modapp/services/application/repository"
@@ -24,8 +23,7 @@ func main() {
 
 	switch dbType {
 	case persistentStore.Dummy:
-		session := &dummyPersistentStore.Session{}
-		applicationRepository = &dummyApplicationStore.DummyApplicationRepository{session}
+		applicationRepository = &dummyApplicationStore.DummyApplicationRepository{}
 	}
 
 	applicationService := application.NewService(applicationRepository)

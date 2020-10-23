@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	// "github.com/danushkaf/go-basic-samples/day02/concurrent/channels/buff"
+	// "github.com/danushkaf/go-basic-samples/day02/concurrent/mutex"
 	// "github.com/danushkaf/go-basic-samples/day02/concurrent/channels/simple"
 	// "github.com/danushkaf/go-basic-samples/day02/concurrent/channels/unbuff"
 )

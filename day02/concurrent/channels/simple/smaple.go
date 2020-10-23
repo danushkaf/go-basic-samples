@@ -19,9 +19,9 @@ func Sample() {
 
 	go calculateValue(values)
 
-	// for index := 0; index < 100; index++ {
-	// 	fmt.Println("Go Channel Printline {}", index)
-	// }
+	for index := 0; index < 100; index++ {
+		fmt.Println("Go Channel Printline {}", index)
+	}
 
 	value := <-values
 

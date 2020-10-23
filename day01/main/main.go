@@ -13,8 +13,10 @@ func main() {
 	fmt.Println("Hello world")
 
 	// // fmt
+	// var st2 string
+	// st2 = "Hello"
 	// st := "Danushka"
-	// fmt.Printf("Hello world %s !\nHave a nice day.\n", st)
+	// fmt.Printf("%s world %s !\nHave a nice day.\n", st2, st)
 	//
 	// log := fmt.Sprintf("Hello world %s !\nHave a nice day.", st)
 	// fmt.Println(log)

@@ -2,11 +2,9 @@ package application
 
 import (
 	dto "github.com/danushkaf/go-basic-samples/day02/modapp/dto"
-	dummy "github.com/danushkaf/go-basic-samples/day02/modapp/persistentstore/dummy"
 )
 
 type DummyApplicationRepository struct {
-	Session *dummy.Session
 }
 
 func (o *DummyApplicationRepository) Add(applicationDto dto.Application) error {
